@@ -1,0 +1,12 @@
+E:\MyProjects\c#\Matrizen\MathMTS\bin\Debug\net6.0\MathMTS.deps.json
+E:\MyProjects\c#\Matrizen\MathMTS\bin\Debug\net6.0\MathMTS.dll
+E:\MyProjects\c#\Matrizen\MathMTS\bin\Debug\net6.0\ref\MathMTS.dll
+E:\MyProjects\c#\Matrizen\MathMTS\bin\Debug\net6.0\MathMTS.pdb
+E:\MyProjects\c#\Matrizen\MathMTS\obj\Debug\net6.0\MathMTS.csproj.AssemblyReference.cache
+E:\MyProjects\c#\Matrizen\MathMTS\obj\Debug\net6.0\MathMTS.GeneratedMSBuildEditorConfig.editorconfig
+E:\MyProjects\c#\Matrizen\MathMTS\obj\Debug\net6.0\MathMTS.AssemblyInfoInputs.cache
+E:\MyProjects\c#\Matrizen\MathMTS\obj\Debug\net6.0\MathMTS.AssemblyInfo.cs
+E:\MyProjects\c#\Matrizen\MathMTS\obj\Debug\net6.0\MathMTS.csproj.CoreCompileInputs.cache
+E:\MyProjects\c#\Matrizen\MathMTS\obj\Debug\net6.0\MathMTS.dll
+E:\MyProjects\c#\Matrizen\MathMTS\obj\Debug\net6.0\ref\MathMTS.dll
+E:\MyProjects\c#\Matrizen\MathMTS\obj\Debug\net6.0\MathMTS.pdb
