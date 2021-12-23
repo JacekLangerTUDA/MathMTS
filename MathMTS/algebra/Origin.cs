@@ -1,6 +1,7 @@
-﻿using Matrizen.alebra.Interfaces;
+﻿using System;
+using MathMTS.algebra.Interfaces;
 
-namespace Matrizen.alebra
+namespace MathMTS.algebra
 {
     public class Origin : IPoint
     {

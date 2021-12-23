@@ -1,4 +1,6 @@
-﻿namespace Matrizen.alebra
+﻿using MathMTS.algebra.exceptions;
+
+namespace MathMTS.algebra
 {
     /// <summary>
     /// Matrix class for matrix operations.

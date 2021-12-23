@@ -1,6 +1,6 @@
-﻿using Matrizen.alebra.exceptions;
+﻿using MathMTS.algebra.exceptions;
 
-namespace Matrizen.alebra
+namespace MathMTS.algebra.Interfaces
 {
     /// <summary>
     /// Vector interface that defines operations
@@ -35,7 +35,7 @@ namespace Matrizen.alebra
         /// <param name="second">the second vector</param>
         /// <returns>the scalar resulting from the multiplication</returns>
         /// <exception cref="InvalidVectorOperationException">if vectors of different dimensions</exception>
-        static double operator *(IVector first, IVector second)
+        public static double operator *(IVector first, IVector second)
         {
             if (first.Dimension != second.Dimension)
                 throw new InvalidVectorOperationException(
@@ -53,7 +53,7 @@ namespace Matrizen.alebra
         /// <param name="alpha">the multiplicator</param>
         /// <param name="vector">the vector</param>
         /// <returns>vector adjusted by alpha</returns>
-        static IVector operator *(double alpha, IVector vector)
+        public static IVector operator *(double alpha, IVector vector)
         {
             for (int i = 0; i < vector.Values.Length; i++)
             {
@@ -68,7 +68,7 @@ namespace Matrizen.alebra
         /// <param name="second">the second vector</param>
         /// <returns>result of operation</returns>
         /// <exception cref="InvalidVectorOperationException"> if vectors of different dimensions</exception>
-        static IVector operator +(IVector first, IVector second)
+        public static IVector operator +(IVector first, IVector second)
         {
             if (first.Dimension != second.Dimension)
                 throw new InvalidVectorOperationException(
@@ -87,7 +87,7 @@ namespace Matrizen.alebra
         /// <param name="first"></param>
         /// <param name="second"></param>
         /// <returns></returns>
-        static IVector operator -(IVector first, IVector second) => first + (-1 * second);
+        public static IVector operator -(IVector first, IVector second) => first + (-1 * second);
 
     }
 }

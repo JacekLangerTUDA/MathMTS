@@ -1,4 +1,4 @@
-﻿namespace Matrizen.alebra.Interfaces
+﻿namespace MathMTS.algebra.Interfaces
 {
     public interface IPoint
     {

@@ -1,6 +1,7 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
-namespace Matrizen.alebra
+namespace MathMTS.algebra.exceptions
 {
     [Serializable]
     internal class InvalidMatrixOperationException : Exception
