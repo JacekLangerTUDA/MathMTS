@@ -1,5 +1,8 @@
 ﻿namespace Matrizen.alebra
 {
+    /// <summary>
+    /// Matrix class for matrix operations.
+    /// </summary>
     public class Matrix
     {
         /// <summary>
