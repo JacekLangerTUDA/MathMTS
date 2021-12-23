@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8af34b61-75d0-4229-a5d0-15f08a8adbfb": {
+      "ProjectGuid": "8af34b61-75d0-4229-a5d0-15f08a8adbfb",
+      "DisplayName": "Matrizen",
+      "ColorIndex": 0
+    },
+    "e9b341db-5dad-49ba-a630-a36a8ecd04ef": {
+      "ProjectGuid": "e9b341db-5dad-49ba-a630-a36a8ecd04ef",
+      "DisplayName": "AlgebraTests",
+      "ColorIndex": 1
+    },
+    "20d2e5f2-975c-48f5-baa9-a73a07c36e8b": {
+      "ProjectGuid": "20d2e5f2-975c-48f5-baa9-a73a07c36e8b",
+      "DisplayName": "AlgebraTest",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

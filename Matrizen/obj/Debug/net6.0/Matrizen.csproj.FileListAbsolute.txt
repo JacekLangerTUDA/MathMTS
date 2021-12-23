@@ -1,0 +1,15 @@
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\bin\Debug\net6.0\Matrizen.exe
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\bin\Debug\net6.0\Matrizen.deps.json
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\bin\Debug\net6.0\Matrizen.runtimeconfig.json
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\bin\Debug\net6.0\Matrizen.dll
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\bin\Debug\net6.0\ref\Matrizen.dll
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\bin\Debug\net6.0\Matrizen.pdb
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\obj\Debug\net6.0\Matrizen.csproj.AssemblyReference.cache
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\obj\Debug\net6.0\Matrizen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\obj\Debug\net6.0\Matrizen.AssemblyInfoInputs.cache
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\obj\Debug\net6.0\Matrizen.AssemblyInfo.cs
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\obj\Debug\net6.0\Matrizen.csproj.CoreCompileInputs.cache
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\obj\Debug\net6.0\Matrizen.dll
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\obj\Debug\net6.0\ref\Matrizen.dll
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\obj\Debug\net6.0\Matrizen.pdb
+C:\Users\langer\Desktop\OSZIMT\Projects\LF5\c#\matrizen\Matrizen\Matrizen\obj\Debug\net6.0\Matrizen.genruntimeconfig.cache
