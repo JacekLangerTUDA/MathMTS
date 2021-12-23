@@ -1,11 +1,14 @@
-﻿namespace Matrizen.alebra
+﻿using Matrizen.alebra.Interfaces;
+
+namespace Matrizen.alebra
 {
     /// <summary>
     /// Point in Rx where x is the dimensions the point covers.
     /// </summary>
-    public class Point
+    public abstract class Point : IPoint
     {
-        public double[] points { get; set; }
+        private double[] coordinates;
+        public double[] Coordinates { get => coordinates; set => coordinates = value; }
 
         /// <summary>
         /// Constructor for this class, expects an array of double that 
@@ -15,7 +18,11 @@
         /// <param name="points"></param>
         public Point(params double[] points)
         {
-            this.points = points;
+            this.Coordinates = points;
         }
+
+        public abstract IVector CreateVector(IPoint point);
+
+        public abstract IVector CreateVector(IPoint start, IPoint end);
     }
 }
