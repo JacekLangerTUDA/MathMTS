@@ -1,6 +1,7 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
-namespace Matrizen.alebra.exceptions
+namespace MathMTS.algebra.exceptions
 {
     public class InvalidVectorOperationException : Exception
     {

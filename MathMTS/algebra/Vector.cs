@@ -1,8 +1,8 @@
-﻿
-using Matrizen.alebra.exceptions;
-using Matrizen.alebra.Interfaces;
+﻿using System;
+using MathMTS.algebra.exceptions;
+using MathMTS.algebra.Interfaces;
 
-namespace Matrizen.alebra
+namespace MathMTS.algebra
 {
     /// <summary>
     /// Vector class to provide functionality for vector operations.

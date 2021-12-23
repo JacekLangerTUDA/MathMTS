@@ -1,6 +1,4 @@
-﻿using Matrizen.alebra;
-
-namespace Matrizen.algebra
+﻿namespace MathMTS.algebra
 {
     public class Vector3D : Vector
     {

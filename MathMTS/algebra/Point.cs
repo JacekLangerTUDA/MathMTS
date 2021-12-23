@@ -1,6 +1,6 @@
-﻿using Matrizen.alebra.Interfaces;
+﻿using MathMTS.algebra.Interfaces;
 
-namespace Matrizen.alebra
+namespace MathMTS.algebra
 {
     /// <summary>
     /// Point in Rx where x is the dimensions the point covers.

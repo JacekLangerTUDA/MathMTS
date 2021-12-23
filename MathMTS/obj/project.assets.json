@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MyProjects\\c#\\Matrizen\\Matrizen\\Matrizen.csproj",
-      "projectName": "Matrizen",
-      "projectPath": "E:\\MyProjects\\c#\\Matrizen\\Matrizen\\Matrizen.csproj",
+      "projectUniqueName": "E:\\MyProjects\\c#\\Matrizen\\MathMTS\\MathMTS.csproj",
+      "projectName": "MathMTS",
+      "projectPath": "E:\\MyProjects\\c#\\Matrizen\\MathMTS\\MathMTS.csproj",
       "packagesPath": "C:\\Users\\Jacek Langer\\.nuget\\packages\\",
-      "outputPath": "E:\\MyProjects\\c#\\Matrizen\\Matrizen\\obj\\",
+      "outputPath": "E:\\MyProjects\\c#\\Matrizen\\MathMTS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

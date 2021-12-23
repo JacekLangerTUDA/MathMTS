@@ -1,6 +1,6 @@
-﻿using Matrizen.alebra.Interfaces;
+﻿using MathMTS.algebra.Interfaces;
 
-namespace Matrizen.alebra
+namespace MathMTS.algebra
 {
     public class PointR : Point
     {
