@@ -18,7 +18,7 @@ namespace Matrizen.alebra
 
         public IVector CreateVector(IPoint start, IPoint end)
         {
-            return new Vector(this.Coordinates);
+            return new VectorR(this.Coordinates);
         }
     }
 }
