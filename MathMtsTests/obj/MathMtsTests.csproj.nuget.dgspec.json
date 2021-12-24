@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MyProjects\\MathMTS\\MathMtsTests\\MathMtsTests.csproj": {}
+    "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMtsTests\\MathMtsTests.csproj": {}
   },
   "projects": {
-    "E:\\MyProjects\\MathMTS\\MathMtsTests\\MathMtsTests.csproj": {
+    "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMtsTests\\MathMtsTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MyProjects\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
+        "projectUniqueName": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
         "projectName": "MathMtsTests",
-        "projectPath": "E:\\MyProjects\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
-        "packagesPath": "C:\\Users\\Jacek Langer\\.nuget\\packages\\",
-        "outputPath": "E:\\MyProjects\\MathMTS\\MathMtsTests\\obj\\",
+        "projectPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
+        "packagesPath": "C:\\Users\\Nutzer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMtsTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jacek Langer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nutzer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\MyProjects\\MathMTS\\MathMTS\\MathMTS.csproj": {
-                "projectPath": "E:\\MyProjects\\MathMTS\\MathMTS\\MathMTS.csproj"
+              "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj": {
+                "projectPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj"
               }
             }
           }
@@ -84,20 +84,20 @@
         }
       }
     },
-    "E:\\MyProjects\\MathMTS\\MathMTS\\MathMTS.csproj": {
+    "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MyProjects\\MathMTS\\MathMTS\\MathMTS.csproj",
+        "projectUniqueName": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj",
         "projectName": "MathMTS",
-        "projectPath": "E:\\MyProjects\\MathMTS\\MathMTS\\MathMTS.csproj",
-        "packagesPath": "C:\\Users\\Jacek Langer\\.nuget\\packages\\",
-        "outputPath": "E:\\MyProjects\\MathMTS\\MathMTS\\obj\\",
+        "projectPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj",
+        "packagesPath": "C:\\Users\\Nutzer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jacek Langer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nutzer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
