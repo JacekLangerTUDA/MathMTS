@@ -1,6 +1,6 @@
 ﻿namespace MathMTS.algebra;
 
-public class Plane
+public class Plane : IPlane
 {
     public Vector3D[] Vertices { get; set; } = new Vector3D[3];
     public double[] alphas { get; set; } = new double[2];
