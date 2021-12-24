@@ -11,5 +11,10 @@ namespace MathMTS.algebra
         public VectorR(IPoint start, IPoint end) : base(start, end)
         {
         }
+
+        public override IVector CorssProduct(IVector other)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
