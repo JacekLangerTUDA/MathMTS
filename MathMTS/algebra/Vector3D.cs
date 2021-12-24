@@ -1,4 +1,6 @@
-﻿namespace MathMTS.algebra
+﻿using MathMTS.algebra.Interfaces;
+
+namespace MathMTS.algebra
 {
     public class Vector3D : Vector
     {
@@ -28,6 +30,11 @@
         }
         private Vector3D(double[] matrix) : base(matrix)
         {
+        }
+
+        public override IVector CorssProduct(IVector other)
+        {
+            throw new NotImplementedException();
         }
     }
 }
