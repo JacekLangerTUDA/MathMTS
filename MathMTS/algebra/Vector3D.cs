@@ -1,40 +1,45 @@
 ﻿using MathMTS.algebra.Interfaces;
 
-namespace MathMTS.algebra
+namespace MathMTS.algebra;
+
+public class Vector3D : Vector
 {
-    public class Vector3D : Vector
+    /// <summary>
+    ///     Constructor for this class, creates a new Vector3D with 0 Values for each dimension.
+    /// </summary>
+    public Vector3D() : this(0, 0, 0)
     {
-        private double x;
-        private double y;
-        private double z;
+    }
 
-        public double X
-        {
-            get { return x; }
-            set { x = value; }
-        }
-        public double Y
-        {
-            get { return y; }
-            set { y = value; }
-        }
-        public double Z
-        {
-            get { return z; }
-            set { z = value; }
-        }
+    /// <summary>
+    ///     Constructor for the Vector3D, creates a new instance of a
+    ///     Vector with 3 dimensions and values x,y,z the respective dimension.
+    /// </summary>
+    /// <param name="x">x value</param>
+    /// <param name="y">y value</param>
+    /// <param name="z">z value</param>
+    public Vector3D(double x, double y, double z) : this(new[] {x, y, z})
+    {
+    }
 
-        public Vector3D(double x, double y, double z) : this(new double[] { x, y, z })
-        {
+    private Vector3D(double[] matrix) : base(matrix)
+    {
+    }
 
-        }
-        private Vector3D(double[] matrix) : base(matrix)
-        {
-        }
+    public double X { get; set; }
 
-        public override IVector CorssProduct(IVector other)
-        {
-            throw new NotImplementedException();
-        }
+    public double Y { get; set; }
+
+    public double Z { get; set; }
+
+    public override IVector CorssProduct(IVector other)
+    {
+        var temp = new Vector3D();
+
+        temp.X = Y * other.Values[2] - Z * other.Values[1];
+        temp.Y = Z * other.Values[0] - X * other.Values[2];
+        temp.Z = X * other.Values[1] - Y * other.Values[0];
+
+        return temp;
     }
 }
