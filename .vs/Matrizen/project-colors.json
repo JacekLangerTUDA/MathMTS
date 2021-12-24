@@ -20,7 +20,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "e1b24d82-c780-46ef-8c32-0ff6d3c32df1": {
+      "ProjectGuid": "e1b24d82-c780-46ef-8c32-0ff6d3c32df1",
+      "DisplayName": "MathMTS",
+      "ColorIndex": 3
+    },
+    "bb57ffa5-38c4-4e81-ae09-22d34db8a62b": {
+      "ProjectGuid": "bb57ffa5-38c4-4e81-ae09-22d34db8a62b",
+      "DisplayName": "MathMtsTests",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }
