@@ -136,6 +136,9 @@ namespace MathMTS.algebra
     /// <returns>Matrix of the width of second and height of first</returns>
     public static Matrix operator *(Matrix first, Matrix second)
     {
+      if (first.Width != second.Height)
+        throw new InvalidMatrixOperationException("you can not multiply these matrizes");
+
       double[][] snd = InitArray(second.Height, second.Width);
       double[][] fst = InitArray(first.Width, first.Height);   // first matrix is going to be flipped so we can just multiply the arrays
 
