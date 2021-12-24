@@ -3877,11 +3877,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MyProjects\\c#\\Matrizen\\MathMtsTests\\MathMtsTests.csproj",
+      "projectUniqueName": "E:\\MyProjects\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
       "projectName": "MathMtsTests",
-      "projectPath": "E:\\MyProjects\\c#\\Matrizen\\MathMtsTests\\MathMtsTests.csproj",
+      "projectPath": "E:\\MyProjects\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
       "packagesPath": "C:\\Users\\Jacek Langer\\.nuget\\packages\\",
-      "outputPath": "E:\\MyProjects\\c#\\Matrizen\\MathMtsTests\\obj\\",
+      "outputPath": "E:\\MyProjects\\MathMTS\\MathMtsTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3902,8 +3902,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\MyProjects\\c#\\Matrizen\\MathMTS\\MathMTS.csproj": {
-              "projectPath": "E:\\MyProjects\\c#\\Matrizen\\MathMTS\\MathMTS.csproj"
+            "E:\\MyProjects\\MathMTS\\MathMTS\\MathMTS.csproj": {
+              "projectPath": "E:\\MyProjects\\MathMTS\\MathMTS\\MathMTS.csproj"
             }
           }
         }

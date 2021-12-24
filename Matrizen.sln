@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32002.185
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgebraTest", "AlgebraTest\AlgebraTest.csproj", "{20D2E5F2-975C-48F5-BAA9-A73A07C36E8B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathMTS", "MathMTS\MathMTS.csproj", "{E1B24D82-C780-46EF-8C32-0FF6D3C32DF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathMtsTests", "MathMtsTests\MathMtsTests.csproj", "{BB57FFA5-38C4-4E81-AE09-22D34DB8A62B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathMtsTests", "MathMtsTests\MathMtsTests.csproj", "{BB57FFA5-38C4-4E81-AE09-22D34DB8A62B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{20D2E5F2-975C-48F5-BAA9-A73A07C36E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20D2E5F2-975C-48F5-BAA9-A73A07C36E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20D2E5F2-975C-48F5-BAA9-A73A07C36E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20D2E5F2-975C-48F5-BAA9-A73A07C36E8B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E1B24D82-C780-46EF-8C32-0FF6D3C32DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1B24D82-C780-46EF-8C32-0FF6D3C32DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1B24D82-C780-46EF-8C32-0FF6D3C32DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU

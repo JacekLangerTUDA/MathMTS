@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uis3/gSkYJUYUqlsxKOfjf/M97ywRK1NooHgBSLxELpB1GW7l0dllntXsi0g9x0zJvsHvDtM59fLwAO7eEXyuA==",
+  "dgSpecHash": "+4xV53UJ3safjFQRZba5ASmPceMAek/b6F2AcToepBH7YHWgDP8v2EWMsPWFd0P9JyvLAYojOwKZegpZeJuljQ==",
   "success": true,
-  "projectFilePath": "E:\\MyProjects\\c#\\Matrizen\\MathMtsTests\\MathMtsTests.csproj",
+  "projectFilePath": "E:\\MyProjects\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jacek Langer\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\Jacek Langer\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

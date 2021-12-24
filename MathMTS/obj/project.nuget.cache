@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0thQrS3O5owDfnjAm84iWXfn0CgP2vVrcj+cqcRdWXc1xcMCzP3tf3fBUAvUFCu2vEWp8dvdIqNhdpfZVhItKQ==",
+  "dgSpecHash": "qazXqjWH2L6CwUbq87galKZ7pMy1IXvP8ijgbxrZaC50G1KCKr012iJIN1/X8e6JO1Kao12QsWjiMg/0VRRAsQ==",
   "success": true,
-  "projectFilePath": "E:\\MyProjects\\c#\\Matrizen\\MathMTS\\MathMTS.csproj",
+  "projectFilePath": "E:\\MyProjects\\MathMTS\\MathMTS\\MathMTS.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
