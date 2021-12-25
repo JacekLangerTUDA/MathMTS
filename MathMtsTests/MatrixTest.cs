@@ -20,9 +20,10 @@ namespace MathMtsTests
             Matrix second = new Matrix(new double[,] { { 1, 2, 3 },
                                                             { 4, 5, 6 },
                                                             { 7, 8, 9 } });
-            Matrix expected = new Matrix(new double[,] { { 30, 66, 102 }, 
-                                                                { 36, 81, 126 },
-                                                                { 42, 96, 150 } });
+            Matrix expected = new Matrix(new double[,] {
+                                                            { 30, 36, 42 }, 
+                                                            { 66, 81, 96 },
+                                                            { 102, 126, 150 }});
             Matrix actual = first * second;
 
             int index = 0;  
