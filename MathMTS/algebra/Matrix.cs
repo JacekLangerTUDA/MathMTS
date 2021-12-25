@@ -71,21 +71,6 @@ public class Matrix
     }
 
     /// <summary>
-    ///     Calculate the scalar pruduct of two vectors.
-    /// </summary>
-    /// <param name="first">the first vector</param>
-    /// <param name="second">the second vector</param>
-    /// <returns>the scalar product</returns>
-    public static double CalculateScalar(double[] first, double[] second)
-    {
-
-        double scalar = 0;
-        for (var i = 0; i < first.Length; i++)
-            scalar += first[i] * second[i];
-        return scalar;
-    }
-
-    /// <summary>
     ///     adds two matrizes and returns a new matrix as a result
     /// </summary>
     /// <param name="first">the first matrix</param>
@@ -130,45 +115,22 @@ public class Matrix
     public static Matrix operator *(Matrix first, Matrix second)
     {
         if (first.Width != second.Height)
-            throw new InvalidMatrixOperationException("you can not multiply these matrizes");
+            throw new InvalidMatrixOperationException("you can not multiply these matrices");
         
         var temp = new Matrix(new double[first.Height, second.Width]);
-        Matrix inverted = InvertMatrix(second);
 
-        double[][] fst = ConvertToJagged(first);
-        double[][] snd = ConvertToJagged(inverted);
-
-        for (var h = 0; h < temp.Height; h++) // move down the array 
-        for (var w = 0; w < temp.Width; w++) // move the array to the side
-            temp.MatrixArray[h, w] = CalculateScalar(fst[h],snd[w]);
-
-        return temp;
-    }
-
-    private static double[][] ConvertToJagged(Matrix matrix)
-    {
-        double[][] temp = new double[matrix.Height][];
-        for (var h = 0; h < matrix.Height; h++)
+        for (int i = 0; i < temp.MatrixArray.Length; i++)
         {
-            temp[h] = new double[matrix.Width];
-            for (var w = 0; w < matrix.Width; w++) // move the array to the side
-                temp[h][w] = matrix.MatrixArray[h, w];
-        }
-        return temp;
-    }
-
-    private static Matrix InvertMatrix(Matrix matrix)
-    {
-        double[,] temp = new double[matrix.Width,matrix.Height];
-
-        for (var h = 0; h < matrix.Height; h++)
-        {
-            for (int w = 0; w < matrix.Width; w++)
+            double val = 0;
+            int hIndex = i / temp.Width;
+            for (int w = 0; w < first.Width; w++)
             {
-                temp[w, h] = matrix.MatrixArray[h, w];
+                val += first.MatrixArray[hIndex, w] * second.MatrixArray[w, i% temp.width];
             }
+            temp.MatrixArray[hIndex, i % temp.Width] = val;
         }
-        return new Matrix(temp);
+
+        return temp;
     }
 
     /// <summary>
