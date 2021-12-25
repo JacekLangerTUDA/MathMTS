@@ -12,6 +12,7 @@
           "Microsoft.NET.Test.Sdk": "16.11.0",
           "NUnit": "3.13.2",
           "NUnit3TestAdapter": "4.0.0",
+          "NUnitV2.Core": "2.7.1",
           "coverlet.collector": "3.1.0"
         },
         "runtime": {
@@ -359,6 +360,18 @@
         }
       },
       "NUnit3TestAdapter/4.0.0": {},
+      "NUnitV2.Core/2.7.1": {
+        "runtime": {
+          "lib/nunit.core.dll": {
+            "assemblyVersion": "2.7.1.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "lib/nunit.core.interfaces.dll": {
+            "assemblyVersion": "2.7.1.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "System.Collections/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -754,6 +767,13 @@
       "sha512": "sha512-5gCkytgQWL93M5s9Rnl4CfSUhn95VsuMVLYjmZe8K7dNRF7kzrBMPsBTyLNCga5qLW7RM/o591J+HVrV1QMaVQ==",
       "path": "nunit3testadapter/4.0.0",
       "hashPath": "nunit3testadapter.4.0.0.nupkg.sha512"
+    },
+    "NUnitV2.Core/2.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FfgsCVHouNCGzAfOMgab10OQu257cjB0CO3TXXgUkiaY6RgDHfMAPNIxYr9HckczvO3AtdYd/XqlsF3XlDWOlg==",
+      "path": "nunitv2.core/2.7.1",
+      "hashPath": "nunitv2.core.2.7.1.nupkg.sha512"
     },
     "System.Collections/4.0.11": {
       "type": "package",

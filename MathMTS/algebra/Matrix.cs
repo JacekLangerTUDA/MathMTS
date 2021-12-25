@@ -1,4 +1,5 @@
-﻿using MathMTS.algebra.exceptions;
+﻿using System.Data;
+using MathMTS.algebra.exceptions;
 
 namespace MathMTS.algebra;
 
@@ -39,7 +40,7 @@ public class Matrix
     public Matrix(double[,] values)
     {
         matrix = values;
-        width = values.GetLength(0);
+        width = values.GetLength(1);        // the second index, (the second array)
         height = values.Length / width;
     }
     /// <summary>
@@ -93,14 +94,14 @@ public class Matrix
     public static Matrix operator +(Matrix first, Matrix second)
     {
 
-        if (first.MatrixArray.Rank != second.MatrixArray.Rank
-            || first.MatrixArray.GetLength(0) != second.MatrixArray.GetLength(0))
+        if (first.Height != second.Height
+            || first.Width != second.Width)
             throw new InvalidMatrixOperationException(
                 "you can not add two matricies of different size");
         var temp = first.MatrixArray;
-        for (var i = 0; i < first.MatrixArray.Length; i++)
-        for (var j = 0; j < first.MatrixArray.GetLength(i); j++)
-            temp[i, j] += second.MatrixArray[i, j];
+        for (var h = 0; h < first.Height; h++)
+            for (var w = 0; w < first.Width; w++)
+                temp[h,w] += second.MatrixArray[h,w];
 
         return new Matrix(temp);
     }
@@ -130,65 +131,44 @@ public class Matrix
     {
         if (first.Width != second.Height)
             throw new InvalidMatrixOperationException("you can not multiply these matrizes");
+        
+        var temp = new Matrix(new double[first.Height, second.Width]);
+        Matrix inverted = InvertMatrix(second);
 
-        var snd = InitArray(second.Height, second.Width);
+        double[][] fst = ConvertToJagged(first);
+        double[][] snd = ConvertToJagged(inverted);
 
-        // first matrix is going to be flipped so we can just multiply the arrays
-        var fst = InitArray(first.Width, first.Height);
+        for (var h = 0; h < temp.Height; h++) // move down the array 
+        for (var w = 0; w < temp.Width; w++) // move the array to the side
+            temp.MatrixArray[h, w] = CalculateScalar(fst[h],snd[w]);
 
-        int heigth, width;
-        heigth = 0;
-        width = 0;
-
-        // invert the first matrix so its written downwards instead of sideways.
-        foreach (var row in first.MatrixArray)
-        {
-            fst[heigth++][width] = row;
-            if (heigth % first.height == 0 && heigth > 0)
-            {
-                width++;
-                heigth = 0;
-            }
-        }
-        //Convert the the second multi dimensional into jagged array
-        heigth = 0;
-        width = 0;
-
-        foreach (var row in second.MatrixArray)
-        {
-
-            snd[heigth][width++] = row;
-
-            if (width % second.width == 0)
-            {
-                width = 0;
-                heigth++;
-            }
-        }
-
-
-        var temp = new double[first.width, second.height];
-
-        for (var h = 0; h < first.height; h++) // move down the array 
-        for (var w = 0; w < second.height; w++) // move the array to the side
-            temp[h, w] = CalculateScalar(fst[h], snd[w]);
-
-        return new Matrix(temp);
+        return temp;
     }
 
-    /// <summary>
-    ///     Initialize an empty multidimensional array with 0 values.
-    /// </summary>
-    /// <param name="width">the length of each array</param>
-    /// <param name="height">the length of the multidimensional array</param>
-    /// <returns>new multidimensional array</returns>
-    private static double[][] InitArray(int width, int height)
+    private static double[][] ConvertToJagged(Matrix matrix)
     {
-        var temp = new double[height][];
-
-        for (var i = 0; i < height; i++)
-            temp[i] = new double[width];
+        double[][] temp = new double[matrix.Height][];
+        for (var h = 0; h < matrix.Height; h++)
+        {
+            temp[h] = new double[matrix.Width];
+            for (var w = 0; w < matrix.Width; w++) // move the array to the side
+                temp[h][w] = matrix.MatrixArray[h, w];
+        }
         return temp;
+    }
+
+    private static Matrix InvertMatrix(Matrix matrix)
+    {
+        double[,] temp = new double[matrix.Width,matrix.Height];
+
+        for (var h = 0; h < matrix.Height; h++)
+        {
+            for (int w = 0; w < matrix.Width; w++)
+            {
+                temp[w, h] = matrix.MatrixArray[h, w];
+            }
+        }
+        return new Matrix(temp);
     }
 
     /// <summary>
