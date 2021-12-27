@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LNQam4fMwCuEecoRNnFKl9oLO2U/1Re3TA0hdZEgDXOa3adoDcCKcnOg4JjVrVygeux1BxnqJY9NEnteItV2Bw==",
+  "dgSpecHash": "1TKs9Oho4xCHj6uzcN7Y0trVfODKQg7OJejC+nM6sFn4uDegSdw4YkHIdHJHeSiyz5RDbJi+rg6/KVjNdgFx1A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\Nutzer\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Nutzer\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
     "C:\\Users\\Nutzer\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512",
+    "C:\\Users\\Nutzer\\.nuget\\packages\\nunitv2.core\\2.7.1\\nunitv2.core.2.7.1.nupkg.sha512",
     "C:\\Users\\Nutzer\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
     "C:\\Users\\Nutzer\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
     "C:\\Users\\Nutzer\\.nuget\\packages\\system.diagnostics.tools\\4.0.1\\system.diagnostics.tools.4.0.1.nupkg.sha512",
@@ -51,5 +52,16 @@
     "C:\\Users\\Nutzer\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Users\\Nutzer\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Das Paket \"NUnitV2.Core 2.7.1\" wurde nicht mit dem Projektzielframework \"net6.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "libraryId": "NUnitV2.Core",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -18,21 +18,52 @@ public class Vector3D : Vector
     /// <param name="x">x value</param>
     /// <param name="y">y value</param>
     /// <param name="z">z value</param>
-    public Vector3D(double x, double y, double z) : this(new[] {x, y, z})
+    public Vector3D(double x, double y, double z) : this(new[] { x, y, z })
     {
     }
 
     private Vector3D(double[] matrix) : base(matrix)
     {
+        X = matrix[0];
+        Y = matrix[1];
+        Z = matrix[2];
     }
 
-    public double X { get; set; }
+    private double x;
 
-    public double Y { get; set; }
+    public double X
+    {
+        get { return x; }
+        set
+        {
+            x = value;
+            this.Values[0] = value;
+        }
+    }
+    private double y;
 
-    public double Z { get; set; }
+    public double Y
+    {
+        get => y;
+        set
+        {
+            y = value;
+            Values[1] = value;
+        }
+    }
+    private double z;
+    public double Z
+    {
+        get => z;
+        set
+        {
+            z = value;
+            Values[2] = value;
+        }
+    }
 
-    public override IVector CorssProduct(IVector other)
+
+    public Vector3D CorssProduct(IVector other)
     {
         var temp = new Vector3D();
 

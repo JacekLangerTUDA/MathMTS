@@ -16,7 +16,6 @@ public interface IVector
     /// </summary>
     double[] Values { get; }
 
-
     /// <summary>
     /// Calculates the length of the vector.
     /// </summary>
@@ -94,7 +93,7 @@ public interface IVector
     /// </summary>
     /// <param name="other"></param>
     /// <returns>the normal vector of two vectors</returns>
-    public IVector CorssProduct(IVector other);
+    public IVector CorssProduct(ref IVector buffer, IVector other);
 
     /// <summary>
     /// Calculate the length of the  Vector.

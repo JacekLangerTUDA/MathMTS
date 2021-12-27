@@ -410,6 +410,17 @@
           "build/netcoreapp2.1/NUnit3TestAdapter.props": {}
         }
       },
+      "NUnitV2.Core/2.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.core.dll": {},
+          "lib/nunit.core.interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.core.dll": {},
+          "lib/nunit.core.interfaces.dll": {}
+        }
+      },
       "System.Collections/4.0.11": {
         "type": "package",
         "dependencies": {
@@ -1823,6 +1834,20 @@
         "build/netcoreapp2.1/testcentric.engine.metadata.dll",
         "nunit3testadapter.4.0.0.nupkg.sha512",
         "nunit3testadapter.nuspec"
+      ]
+    },
+    "NUnitV2.Core/2.7.1": {
+      "sha512": "FfgsCVHouNCGzAfOMgab10OQu257cjB0CO3TXXgUkiaY6RgDHfMAPNIxYr9HckczvO3AtdYd/XqlsF3XlDWOlg==",
+      "type": "package",
+      "path": "nunitv2.core/2.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/nunit.core.dll",
+        "lib/nunit.core.interfaces.dll",
+        "license.txt",
+        "nunitv2.core.2.7.1.nupkg.sha512",
+        "nunitv2.core.nuspec"
       ]
     },
     "System.Collections/4.0.11": {
@@ -3867,6 +3892,7 @@
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "NUnit >= 3.13.2",
       "NUnit3TestAdapter >= 4.0.0",
+      "NUnitV2.Core >= 2.7.1",
       "coverlet.collector >= 3.1.0"
     ]
   },
@@ -3930,6 +3956,10 @@
             "target": "Package",
             "version": "[4.0.0, )"
           },
+          "NUnitV2.Core": {
+            "target": "Package",
+            "version": "[2.7.1, )"
+          },
           "coverlet.collector": {
             "target": "Package",
             "version": "[3.1.0, )"
@@ -3953,5 +3983,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Das Paket \"NUnitV2.Core 2.7.1\" wurde nicht mit dem Projektzielframework \"net6.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "libraryId": "NUnitV2.Core",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

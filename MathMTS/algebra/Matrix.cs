@@ -1,4 +1,5 @@
-﻿using MathMTS.algebra.exceptions;
+﻿using System.Data;
+using MathMTS.algebra.exceptions;
 
 namespace MathMTS.algebra;
 
@@ -39,7 +40,7 @@ public class Matrix
     public Matrix(double[,] values)
     {
         matrix = values;
-        width = values.GetLength(0);
+        width = values.GetLength(1);        // the second index, (the second array)
         height = values.Length / width;
     }
     /// <summary>
@@ -70,21 +71,6 @@ public class Matrix
     }
 
     /// <summary>
-    ///     Calculate the scalar pruduct of two vectors.
-    /// </summary>
-    /// <param name="first">the first vector</param>
-    /// <param name="second">the second vector</param>
-    /// <returns>the scalar product</returns>
-    public static double CalculateScalar(double[] first, double[] second)
-    {
-
-        double scalar = 0;
-        for (var i = 0; i < first.Length; i++)
-            scalar += first[i] * second[i];
-        return scalar;
-    }
-
-    /// <summary>
     ///     adds two matrizes and returns a new matrix as a result
     /// </summary>
     /// <param name="first">the first matrix</param>
@@ -93,14 +79,14 @@ public class Matrix
     public static Matrix operator +(Matrix first, Matrix second)
     {
 
-        if (first.MatrixArray.Rank != second.MatrixArray.Rank
-            || first.MatrixArray.GetLength(0) != second.MatrixArray.GetLength(0))
+        if (first.Height != second.Height
+            || first.Width != second.Width)
             throw new InvalidMatrixOperationException(
                 "you can not add two matricies of different size");
         var temp = first.MatrixArray;
-        for (var i = 0; i < first.MatrixArray.Length; i++)
-        for (var j = 0; j < first.MatrixArray.GetLength(i); j++)
-            temp[i, j] += second.MatrixArray[i, j];
+        for (var h = 0; h < first.Height; h++)
+            for (var w = 0; w < first.Width; w++)
+                temp[h,w] += second.MatrixArray[h,w];
 
         return new Matrix(temp);
     }
@@ -129,65 +115,21 @@ public class Matrix
     public static Matrix operator *(Matrix first, Matrix second)
     {
         if (first.Width != second.Height)
-            throw new InvalidMatrixOperationException("you can not multiply these matrizes");
+            throw new InvalidMatrixOperationException("you can not multiply these matrices");
+        
+        var temp = new Matrix(new double[first.Height, second.Width]);
 
-        var snd = InitArray(second.Height, second.Width);
-
-        // first matrix is going to be flipped so we can just multiply the arrays
-        var fst = InitArray(first.Width, first.Height);
-
-        int heigth, width;
-        heigth = 0;
-        width = 0;
-
-        // invert the first matrix so its written downwards instead of sideways.
-        foreach (var row in first.MatrixArray)
+        for (int i = 0; i < temp.MatrixArray.Length; i++)
         {
-            fst[heigth++][width] = row;
-            if (heigth % first.height == 0 && heigth > 0)
+            double val = 0;
+            int hIndex = i / temp.Width;
+            for (int w = 0; w < first.Width; w++)
             {
-                width++;
-                heigth = 0;
+                val += first.MatrixArray[hIndex, w] * second.MatrixArray[w, i% temp.width];
             }
-        }
-        //Convert the the second multi dimensional into jagged array
-        heigth = 0;
-        width = 0;
-
-        foreach (var row in second.MatrixArray)
-        {
-
-            snd[heigth][width++] = row;
-
-            if (width % second.width == 0)
-            {
-                width = 0;
-                heigth++;
-            }
+            temp.MatrixArray[hIndex, i % temp.Width] = val;
         }
 
-
-        var temp = new double[first.width, second.height];
-
-        for (var h = 0; h < first.height; h++) // move down the array 
-        for (var w = 0; w < second.height; w++) // move the array to the side
-            temp[h, w] = CalculateScalar(fst[h], snd[w]);
-
-        return new Matrix(temp);
-    }
-
-    /// <summary>
-    ///     Initialize an empty multidimensional array with 0 values.
-    /// </summary>
-    /// <param name="width">the length of each array</param>
-    /// <param name="height">the length of the multidimensional array</param>
-    /// <returns>new multidimensional array</returns>
-    private static double[][] InitArray(int width, int height)
-    {
-        var temp = new double[height][];
-
-        for (var i = 0; i < height; i++)
-            temp[i] = new double[width];
         return temp;
     }
 
