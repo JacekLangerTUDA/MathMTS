@@ -364,11 +364,11 @@
         "runtime": {
           "lib/nunit.core.dll": {
             "assemblyVersion": "2.7.1.0",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "2.7.1.0"
           },
           "lib/nunit.core.interfaces.dll": {
             "assemblyVersion": "2.7.1.0",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "2.7.1.0"
           }
         }
       },

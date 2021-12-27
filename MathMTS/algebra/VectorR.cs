@@ -12,9 +12,5 @@ namespace MathMTS.algebra
         {
         }
 
-        public override IVector CorssProduct(IVector other)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

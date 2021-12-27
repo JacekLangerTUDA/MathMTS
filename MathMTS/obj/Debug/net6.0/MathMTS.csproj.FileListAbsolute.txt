@@ -22,3 +22,15 @@ E:/MyProjects/c#/Matrizen/MathMTS/obj/Debug/net6.0/MathMTS.pdb
 /home/jack/Schreibtisch/Projects/MathMTS/MathMTS/obj/Debug/net6.0/MathMTS.dll
 /home/jack/Schreibtisch/Projects/MathMTS/MathMTS/obj/Debug/net6.0/ref/MathMTS.dll
 /home/jack/Schreibtisch/Projects/MathMTS/MathMTS/obj/Debug/net6.0/MathMTS.pdb
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\bin\Debug\net6.0\MathMTS.deps.json
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\bin\Debug\net6.0\MathMTS.dll
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\bin\Debug\net6.0\ref\MathMTS.dll
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\bin\Debug\net6.0\MathMTS.pdb
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\obj\Debug\net6.0\MathMTS.csproj.AssemblyReference.cache
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\obj\Debug\net6.0\MathMTS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\obj\Debug\net6.0\MathMTS.AssemblyInfoInputs.cache
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\obj\Debug\net6.0\MathMTS.AssemblyInfo.cs
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\obj\Debug\net6.0\MathMTS.csproj.CoreCompileInputs.cache
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\obj\Debug\net6.0\MathMTS.dll
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\obj\Debug\net6.0\ref\MathMTS.dll
+C:\Users\Nutzer\Desktop\projekte\MathMTS\MathMTS\obj\Debug\net6.0\MathMTS.pdb

@@ -61,7 +61,19 @@ public abstract class Vector : IVector
         return alpha * vec;
     }
 
-    public abstract IVector CorssProduct(IVector other);
+    public virtual IVector CorssProduct(ref IVector buffer, IVector other)
+    {
+        var size = this.Values.Length;
+        for (int i = 0; i < this.Values.Length; i++)
+        {
+
+            var a = this.Values[(i + 1) % size] * other.Values[(i + 2) % size];
+            var b = this.Values[(i + 2) % size] * other.Values[(i + 1) % size];
+            buffer.Values[i] = a - b;
+        }
+
+        return buffer;
+    }
 
     public double Length()
     {

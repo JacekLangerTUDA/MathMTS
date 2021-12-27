@@ -1,28 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/jack/Schreibtisch/Projects/MathMTS/MathMTS/MathMTS.csproj": {}
+    "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj": {}
   },
   "projects": {
-    "/home/jack/Schreibtisch/Projects/MathMTS/MathMTS/MathMTS.csproj": {
+    "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jack/Schreibtisch/Projects/MathMTS/MathMTS/MathMTS.csproj",
+        "projectUniqueName": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj",
         "projectName": "MathMTS",
-        "projectPath": "/home/jack/Schreibtisch/Projects/MathMTS/MathMTS/MathMTS.csproj",
-        "packagesPath": "/home/jack/.nuget/packages/",
-        "outputPath": "/home/jack/Schreibtisch/Projects/MathMTS/MathMTS/obj/",
+        "projectPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj",
+        "packagesPath": "C:\\Users\\Nutzer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "/home/jack/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Nutzer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

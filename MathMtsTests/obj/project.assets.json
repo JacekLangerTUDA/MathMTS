@@ -3897,36 +3897,39 @@
     ]
   },
   "packageFolders": {
-    "/home/jack/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Nutzer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jack/Schreibtisch/Projects/MathMTS/MathMtsTests/MathMtsTests.csproj",
+      "projectUniqueName": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
       "projectName": "MathMtsTests",
-      "projectPath": "/home/jack/Schreibtisch/Projects/MathMTS/MathMtsTests/MathMtsTests.csproj",
-      "packagesPath": "/home/jack/.nuget/packages/",
-      "outputPath": "/home/jack/Schreibtisch/Projects/MathMTS/MathMtsTests/obj/",
+      "projectPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMtsTests\\MathMtsTests.csproj",
+      "packagesPath": "C:\\Users\\Nutzer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMtsTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "/home/jack/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Nutzer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/jack/Schreibtisch/Projects/MathMTS/MathMTS/MathMTS.csproj": {
-              "projectPath": "/home/jack/Schreibtisch/Projects/MathMTS/MathMTS/MathMTS.csproj"
+            "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj": {
+              "projectPath": "C:\\Users\\Nutzer\\Desktop\\projekte\\MathMTS\\MathMTS\\MathMTS.csproj"
             }
           }
         }
@@ -3977,7 +3980,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -3986,7 +3989,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'NUnitV2.Core 2.7.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Das Paket \"NUnitV2.Core 2.7.1\" wurde nicht mit dem Projektzielframework \"net6.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
       "libraryId": "NUnitV2.Core",
       "targetGraphs": [
         "net6.0"
