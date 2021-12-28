@@ -26,4 +26,15 @@ public class VectorTests
         IVector actual = vector3D.CrossProduct(other);
         Assert.AreEqual(vectorR.CorssProduct(ref buffer, another).Values, actual.Values);
     }
+
+
+    /// <summary>
+    ///     Test for Angle calculation between two vertices.
+    /// </summary>
+    [Test]
+    public void AngleTest()
+    {
+        //TODO implement
+        Assert.Fail();
+    }
 }
