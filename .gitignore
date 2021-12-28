@@ -1,9 +1,10 @@
-#exclude following
-/Matrizen.sln.DotSettings.user
-/.vs/Matrizen/DesignTimeBuild/.dtbcache.v2
-/.vs/Matrizen/v17/.futdcache.v1
-/.vs/Matrizen/v17/.suo
-/MathMTS/obj/project.packagespec.json
-/MathMtsTests/obj/Debug/net6.0/MathMtsTests.csproj.AssemblyReference.cache
-/MathMtsTests/obj/project.packagespec.json
-/.idea/.idea.Matrizen/.idea/misc.xml
+#exclude ide settings
+
+Matrizen.sln.DotSettings.user
+.vs/Matrizen/DesignTimeBuild/.dtbcache.v2
+.vs/Matrizen/v17/.futdcache.v1
+.vs/Matrizen/v17/.suo
+MathMTS/obj/project.packagespec.json
+MathMtsTests/obj/Debug/net6.0/MathMtsTests.csproj.AssemblyReference.cache
+MathMtsTests/obj/project.packagespec.json
+.idea/.idea.Matrizen/.idea/misc.xml
