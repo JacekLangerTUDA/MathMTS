@@ -16,11 +16,11 @@ public class Plane : IPlane
     /// <param name="beta">multiplier for the second directional vector</param>
     public Plane(Vector3D start, Vector3D first, Vector3D second, double alpha, double beta)
     {
-        Vertices[0] = start;
-        Vertices[1] = first;
-        Vertices[2] = second;
-        alphas[0] = alpha;
-        alphas[1] = beta;
+        this.Vertices[0] = start;
+        this.Vertices[1] = first;
+        this.Vertices[2] = second;
+        this.alphas[0] = alpha;
+        this.alphas[1] = beta;
     }
 
     public Vector3D[] Vertices { get; set; } = new Vector3D[3];
@@ -30,8 +30,5 @@ public class Plane : IPlane
     ///     Calculates the cross product of the two directional vertices.
     /// </summary>
     /// <returns>the normal vector of the plane</returns>
-    public Vector3D Normal()
-    {
-        return Vertices[1].CorssProduct(Vertices[2]) as Vector3D;
-    }
+    public Vector3D Normal() => this.Vertices[1].CrossProduct(this.Vertices[2]);
 }
