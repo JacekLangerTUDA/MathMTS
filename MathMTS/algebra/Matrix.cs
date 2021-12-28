@@ -1,5 +1,4 @@
-﻿using System.Data;
-using MathMTS.algebra.exceptions;
+﻿using MathMTS.algebra.exceptions;
 
 namespace MathMTS.algebra;
 
@@ -15,11 +14,11 @@ public class Matrix
     /// <summary>
     ///     the height of the matrix
     /// </summary>
-    private int height;
+    private int _height;
     /// <summary>
     ///     the width of the matrix
     /// </summary>
-    private int width;
+    private int _width;
 
     /// <summary>
     ///     Constructor that creates a zero matrix of the given size.
@@ -28,8 +27,8 @@ public class Matrix
     /// <param name="width">the width</param>
     public Matrix(int height, int width)
     {
-        this.height = height;
-        this.width = width;
+        _height = height;
+        _width = width;
 
         matrix = new double[height, width];
     }
@@ -40,8 +39,8 @@ public class Matrix
     public Matrix(double[,] values)
     {
         matrix = values;
-        width = values.GetLength(1);        // the second index, (the second array)
-        height = values.Length / width;
+        _width = values.GetLength(1); // the second index, (the second array)
+        _height = values.Length / _width;
     }
     /// <summary>
     ///     The public matrix.
@@ -57,8 +56,8 @@ public class Matrix
     /// </summary>
     public int Height
     {
-        get => height;
-        set => height = value;
+        get => _height;
+        set => _height = value;
     }
 
     /// <summary>
@@ -66,8 +65,8 @@ public class Matrix
     /// </summary>
     public int Width
     {
-        get => width;
-        set => width = value;
+        get => _width;
+        set => _width = value;
     }
 
     /// <summary>
@@ -85,8 +84,10 @@ public class Matrix
                 "you can not add two matricies of different size");
         var temp = first.MatrixArray;
         for (var h = 0; h < first.Height; h++)
-            for (var w = 0; w < first.Width; w++)
-                temp[h,w] += second.MatrixArray[h,w];
+        for (var w = 0; w < first.Width; w++)
+        {
+            temp[h, w] += second.MatrixArray[h, w];
+        }
 
         return new Matrix(temp);
     }
@@ -102,7 +103,9 @@ public class Matrix
         var values = mat.MatrixArray;
         for (var i = 0; i < values.Rank; i++)
         for (var j = 0; j < values.GetLength(i); j++)
+        {
             values[i, j] *= alpha;
+        }
         return new Matrix(values);
     }
 
@@ -116,16 +119,16 @@ public class Matrix
     {
         if (first.Width != second.Height)
             throw new InvalidMatrixOperationException("you can not multiply these matrices");
-        
+
         var temp = new Matrix(new double[first.Height, second.Width]);
 
-        for (int i = 0; i < temp.MatrixArray.Length; i++)
+        for (var i = 0; i < temp.MatrixArray.Length; i++)
         {
             double val = 0;
-            int hIndex = i / temp.Width;
-            for (int w = 0; w < first.Width; w++)
+            var hIndex = i / temp.Width;
+            for (var w = 0; w < first.Width; w++)
             {
-                val += first.MatrixArray[hIndex, w] * second.MatrixArray[w, i% temp.width];
+                val += first.MatrixArray[hIndex, w] * second.MatrixArray[w, i % temp._width];
             }
             temp.MatrixArray[hIndex, i % temp.Width] = val;
         }
@@ -137,8 +140,29 @@ public class Matrix
     ///     Calculates the determinante of the matrix.
     /// </summary>
     /// <returns>Determinante</returns>
-    private double Determinante()
+    public double Determinante()
     {
-        return -1;
+        // only square matrices have a determinant!
+        if (this.Height != this.Width)
+            throw new InvalidMatrixOperationException(
+                $"Invalid matrix, a {this.Width}x{this.Height} matrix has no determinant");
+
+        double a, b, determinante = 0;
+        for (var w = 0; w < this.Width; w++)
+        {
+            // set a and b to the first elements of the respective row and column
+            a = this.MatrixArray[0, w];
+            b = this.MatrixArray[this.Height - 1, w];
+            // start at the second element
+            for (var h = 1; h < this.Height; h++)
+            {
+                // move to the right and down start at the left side when the outer bound is reached
+                a *= this.MatrixArray[h, (h + w) % this.Width];
+                // move to the right and up start at the left side when the outer bound is reached
+                b *= this.MatrixArray[this.Height - h - 1, (h + w) % this.Width];
+            }
+            determinante += a - b;
+        }
+        return determinante;
     }
 }
